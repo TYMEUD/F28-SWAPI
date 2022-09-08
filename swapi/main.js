@@ -4,9 +4,9 @@
 
 let button = document.querySelector('button')
 
- const baseUrl = 'https://swapi.dev/api/'
+ const baseUrl = 'https://swapi.dev/api/planets/2'
 
-const residentCallback = ({ data: people }) => buttonClicked(people)
+const residentCallback = ({ data: people }) => console.log(people.residents)
  const errCallback = err => console.log(err)
 
 
